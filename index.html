@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YemScan — Yemeni Web Attack and Vulnerability Scanner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="viewport">
+  <div id="stage">
+    <!-- Header / Top Bar (Present on all slides) -->
+    <header id="presHeader">
+      <div class="h-brand">
+        <div class="h-logo">
+          <svg viewBox="0 0 100 100" width="30" height="30">
+            <circle cx="50" cy="50" r="42" fill="none" stroke="#2dd4bf" stroke-width="5"/>
+            <circle cx="50" cy="50" r="26" fill="none" stroke="#38bdf8" stroke-width="3" opacity=".6"/>
+            <path d="M50 50 L84 30" stroke="#2dd4bf" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="50" cy="50" r="5" fill="#2dd4bf"/>
+          </svg>
+        </div>
+        <div class="h-titles">
+          <span class="h-name">YemScan</span>
+          <span class="h-sep">|</span>
+          <span class="h-context" data-i18n="headerContext">UST · Graduation Project 2026-2027</span>
+        </div>
+      </div>
+
+      <div class="h-pipeline-pill">
+        <span class="pipe-step">Discover</span><span class="p-arr">›</span>
+        <span class="pipe-step">Scan</span><span class="p-arr">›</span>
+        <span class="pipe-step">Process</span><span class="p-arr">›</span>
+        <span class="pipe-step">Enrich</span><span class="p-arr">›</span>
+        <span class="pipe-step">Analyze</span><span class="p-arr">›</span>
+        <span class="pipe-step">Report</span>
+      </div>
+
+      <div class="h-actions">
+        <button id="topLangBtn" class="pill-btn lang-pill">
+          <span class="l-en">EN</span><span class="l-divider">/</span><span class="l-ar">عربي</span>
+        </button>
+        <button id="topOvBtn" class="pill-btn" title="Overview (O)">▦ <span data-i18n="overview">Overview</span></button>
+        <button id="topFsBtn" class="pill-btn" title="Fullscreen (F)">⛶</button>
+      </div>
+    </header>
+
+    <!-- Cover Screen -->
+    <section id="cover" class="screen">
+      <div class="cover-bg"></div>
+      <div class="cover-inner">
+        <div class="uni-badge">
+          <div class="uni-emblem">🇾🇪 🎓</div>
+          <div class="uni-info">
+            <div class="uni-name" data-i18n="uniName">University of Science and Technology · Faculty of Computing and Information Technology</div>
+            <div class="uni-dept" data-i18n="uniDept">Department of Computer Science · Cybersecurity and Networking</div>
+          </div>
+        </div>
+
+        <div class="hero-center">
+          <div class="radar-visual">
+            <div class="radar-ring r1"></div>
+            <div class="radar-ring r2"></div>
+            <div class="radar-ring r3"></div>
+            <div class="radar-sweep"></div>
+            <div class="radar-dot d1"></div>
+            <div class="radar-dot d2"></div>
+            <div class="radar-dot d3"></div>
+            <div class="radar-core">🛡️</div>
+          </div>
+
+          <h1 class="hero-title">YemScan</h1>
+          <h2 class="hero-full-title" data-i18n="heroFullTitle">Yemeni Web Attack and Vulnerability Scanner</h2>
+          <p class="hero-desc" data-i18n="heroDesc">An integrated external black-box security scanning and reconnaissance platform with multi-tool orchestration, security-reference enrichment, AES-256-GCM encrypted storage, and Gemini AI-assisted analysis.</p>
+
+          <div class="pipeline-badge">
+            <span class="pb-tag" data-i18n="corePipeline">Core Pipeline</span>
+            <div class="pb-steps">
+              <span><b>01</b> Discover</span><i>→</i>
+              <span><b>02</b> Scan</span><i>→</i>
+              <span><b>03</b> Process</span><i>→</i>
+              <span><b>04</b> Enrich</span><i>→</i>
+              <span><b>05</b> Analyze</span><i>→</i>
+              <span><b>06</b> Report</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="meta-grid">
+          <div class="meta-card team-card">
+            <div class="meta-lbl" data-i18n="projectTeam">Project Team (Cybersecurity & Networking)</div>
+            <div class="team-grid">
+              <div class="member"><span class="m-icon">👤</span><span class="m-name">Mohammed Saleh Hatem</span><span class="m-id">202310400368</span></div>
+              <div class="member"><span class="m-icon">👤</span><span class="m-name">Nassar Ahmed Al-Fattahi</span><span class="m-id">202310400349</span></div>
+              <div class="member"><span class="m-icon">👤</span><span class="m-name">Mohammed Abdulwahid Alrubaidi</span><span class="m-id">202310100273</span></div>
+              <div class="member"><span class="m-icon">👤</span><span class="m-name">Younes Mohammed Alsarory</span><span class="m-id">202310102399</span></div>
+              <div class="member"><span class="m-icon">👤</span><span class="m-name">Abdulmajid Abulkarim Anqa</span><span class="m-id">202310102081</span></div>
+            </div>
+          </div>
+
+          <div class="meta-card sup-card">
+            <div class="sup-row">
+              <div>
+                <div class="meta-lbl" data-i18n="supervisorLbl">Academic Supervisor</div>
+                <div class="sup-val">Dr. Aisha Al-Hadm</div>
+              </div>
+              <div class="academic-year">
+                <span class="ay-lbl" data-i18n="academicYear">Academic Year</span>
+                <span class="ay-val">2026 – 2027</span>
+              </div>
+            </div>
+
+            <div class="cta-row">
+              <button id="startBtn" class="btn-primary" data-i18n="startBtn">
+                <span class="btn-ic">▶</span> <span data-i18n="startText">Start Presentation</span>
+              </button>
+              <div class="disclaimer-mini" data-i18n="disclaimerCover">
+                ⚠️ Academic Defense Presentation · All scans are simulated animations · No real scanning or testing executed
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide Container -->
+    <main id="slides" class="hidden"></main>
+
+    <!-- Footer Status / Navigation Bar (On Slides) -->
+    <footer id="presFooter" class="hidden">
+      <div class="f-left">
+        <button id="prevBtn" class="f-btn" title="Previous Slide (← / PageUp)">‹ <span data-i18n="prev">Prev</span></button>
+        <span id="slideCounter" class="f-counter">01 / 20</span>
+        <button id="nextBtn" class="f-btn f-btn-primary" title="Next Slide (→ / Space)"> <span data-i18n="next">Next</span> ›</button>
+      </div>
+
+      <div class="f-center">
+        <div id="progTrack"><div id="progFill"></div></div>
+      </div>
+
+      <div class="f-right">
+        <button id="modeBtn" class="f-btn f-subtle" id="reduceMotionBtn" data-i18n="reduceMotion">Reduce Motion</button>
+        <div class="quick-jump">
+          <label for="jumpInput" data-i18n="jumpTo">Slide</label>
+          <input id="jumpInput" type="number" min="1" max="20" aria-label="Go to slide">
+        </div>
+        <button id="helpBtn" class="f-btn f-subtle" title="Help (?)">?</button>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Slide Overview Modal -->
+  <div id="overview" class="hidden" role="dialog" aria-modal="true" aria-label="Slide Overview">
+    <div class="ov-inner">
+      <div class="ov-head">
+        <div>
+          <h2 data-i18n="overviewTitle">Presentation Overview</h2>
+          <p class="ov-sub" data-i18n="overviewSub">Jump directly to any section of the graduation defense</p>
+        </div>
+        <button id="ovClose" class="pill-btn">✕ <span data-i18n="close">Close</span></button>
+      </div>
+      <div id="ovGrid" class="ov-grid"></div>
+    </div>
+  </div>
+
+  <!-- Keyboard Shortcuts Modal -->
+  <div id="helpModal" class="hidden" role="dialog" aria-modal="true">
+    <div class="help-inner">
+      <div class="help-head">
+        <h3 data-i18n="shortcutsTitle">Keyboard Navigation Shortcuts</h3>
+        <button id="helpClose" class="pill-btn">✕</button>
+      </div>
+      <div class="help-grid" id="helpContent"></div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
