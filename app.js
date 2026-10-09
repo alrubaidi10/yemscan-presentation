@@ -81,7 +81,7 @@ addSlide(
         <div><b>${tr('Faculty:', 'الكلية:')}</b> ${tr('Faculty of Computing & IT · Computer Science Dept', 'كلية الحاسبات وتكنولوجيا المعلومات · قسم علوم الحاسوب')}</div>
         <div><b>${tr('Specialization:', 'التخصص:')}</b> ${tr('Cybersecurity and Networking', 'الأمن السيبراني والشبكات')}</div>
         <div><b>${tr('Academic Year:', 'العام الجامعي:')}</b> 2026 - 2027</div>
-        <div><b>${tr('Supervisor:', 'المشرف:')}</b> <span style="color:var(--violet); font-weight:800;">Dr. Aisha Al-Hadm (د. عائشة الهضم)</span></div>
+        <div><b>${tr('Supervisor:', 'المشرف:')}</b> <span style="color:var(--violet); font-weight:800;">Dr. Aisha Al-Hadm (د. عائشة الحدم)</span></div>
       </div>`, 'c-card')}
 
     ${A(1, `<div class="c-card-ic">👥</div>
