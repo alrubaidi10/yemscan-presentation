@@ -331,12 +331,12 @@ addSlide(
    'اكتشاف ← فحص ← معالجة ← إثراء ← تحليل ← تقرير. محاكاة توضيحية تفاعلية للعرض أدناه.'],
   () => {
     const pipeSteps = [
-      ['01', '🔭', 'Discovery', 'الاستكشاف', 'Subfinder / Naabu / httpx'],
-      ['02', '📡', 'Scanning', 'الفحص', 'Nuclei / Wapiti'],
+      ['01', '🔭', 'Discovery', 'الاستكشاف', 'Subfinder · Naabu · httpx · Kiterunner (APIs)'],
+      ['02', '📡', 'Scanning', 'فحص الثغرات', 'Nuclei & Wapiti (Web & APIs)'],
       ['03', '⚙️', 'Processing', 'المعالجة', 'Normalization & Dedup'],
-      ['04', '🏷️', 'Enrichment', 'الإثراء', 'CVE/CWE/CVSS Mapping'],
-      ['05', '🧠', 'AI Analysis', 'التحليل الذكي', 'Gemini Reasoning'],
-      ['06', '📑', 'Reporting', 'التقارير', 'Encrypted PDF / JSON']
+      ['04', '🏷️', 'Enrichment', 'الإثراء', 'CVE · CWE · CVSS · OWASP'],
+      ['05', '🧠', 'AI Analysis', 'التحليل الذكي', 'Gemini 3.8 Flash Reasoning'],
+      ['06', '📑', 'Reporting', 'التقارير', 'AES-256-GCM Encrypted Reports']
     ];
     return `<div class="c-col" style="align-items:center; gap:16px;">
       <div class="pipeline-flow" id="wfSimPipe">
